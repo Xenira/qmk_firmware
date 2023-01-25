@@ -27,7 +27,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DIODE_DIRECTION COL2ROW
 
 // #define USB_VBUS_PIN        B10 // doesn't seem to work for me on one of my controllers... */
-#define SPLIT_HAND_PIN C14 // high = left, low = right
+#define EE_HANDS
+#define SPLIT_USB_DETECT
 
 // WS2812 RGB LED strip input and number of LEDs
 #define RGB_DI_PIN A1
@@ -46,12 +47,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     { 26, 26 }
 
 #define DEBUG_LED_PIN C13
-
-/* Audio config */
-#define AUDIO_PIN B1
-#define AUDIO_PWM_DRIVER PWMD3
-#define AUDIO_PWM_CHANNEL 4
-#define AUDIO_PWM_PAL_MODE 2
 
 /* serial.c configuration for split keyboard */
 #define SERIAL_USART_FULL_DUPLEX // Enable full duplex operation mode.
@@ -74,12 +69,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define I2C1_SDA_PAL_MODE 4
 #define I2C1_CLOCK_SPEED 400000
 #define I2C1_DUTY_CYCLE FAST_DUTY_CYCLE_16_9
-
-/* encoder config */
-#define ENCODERS_PAD_A \
-    { A13 }
-#define ENCODERS_PAD_B \
-    { A14 }
 
 /* spi config for eeprom and pmw3360 sensor */
 #define SPI_DRIVER SPID1

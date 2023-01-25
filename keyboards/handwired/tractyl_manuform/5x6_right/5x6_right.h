@@ -20,6 +20,8 @@
 
 #if defined(KEYBOARD_handwired_tractyl_manuform_5x6_right_f411)
 #    include "f411.h"
+#elif defined(KEYBOARD_handwired_tractyl_manuform_5x6_right_f401)
+#    include "f401.h"
 #elif defined(KEYBOARD_handwired_tractyl_manuform_5x6_right_f303)
 #    include "f303.h"
 #elif defined(KEYBOARD_handwired_tractyl_manuform_5x6_right_teensy2pp)
